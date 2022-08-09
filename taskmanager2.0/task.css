@@ -1,0 +1,161 @@
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 0%;
+        background-color: rgb(249, 249, 249);
+        z-index: 0;
+    }
+    .to-do{
+        background-color: #f2f2f2;
+        box-shadow: 20% black;
+        height: 95vh;
+        width: 93vw;
+        margin: 4%;
+        margin-bottom: 0%;
+    
+    }
+    div>.today{
+        color: rgb(61, 105, 26);
+        position: absolute;
+        top: 3%;
+        right: 7%;
+
+    }
+    .top>h3{
+        padding: 3%;
+        color: rgb(61, 105, 26);
+
+    }
+    div>small{
+        color: grey;
+        margin: 4%;
+        padding-top: -30%;
+        margin-top: -57%;
+    }
+    .search-box{
+        position: relative;
+    }
+    .search{
+        width: 70vw;
+        margin-top: 3%;
+        margin-left: 10%;
+        display: block;
+        border: none;
+        background-color: rgb(61, 105, 26);
+        z-index: 0;
+
+        ;
+    }
+    .search-icon{
+        color: white;
+        position: absolute;
+        right:150px;
+        top: 5px;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        z-index: 0;
+    }
+    .flex-item{
+        margin: 3%;
+        margin-left: 5%;
+        padding: 3%;
+        color: rgb(61, 105, 26);
+    }
+    .flex-item:hover{
+        background-color: rgb(175, 221, 137);
+        color: white;
+    }
+    .activity{
+        position: relative;
+        padding: 3%;
+        padding-left: 5%;
+        margin: 3%;
+        background-color: white;
+        box-shadow: 3px 3px 20px  rgb(190, 190, 190);
+        /* height: 14vw; */
+        color: rgb(61, 105, 26);
+
+        
+    }
+    .add-item{
+        border: none;
+        background-color: rgb(61, 105, 26);
+        width: 92vw;
+        height: 10vh;
+        position: absolute;
+        bottom: 3%;
+        border-radius:30px 30px 0px 0px;
+        cursor: pointer;
+        
+    }
+    #edit-popup{
+        display: none;
+        background-color: white;
+    }
+    #edit-popup.activeOne{
+        display: block;
+    }
+    .edit{
+       background-color: red;
+    }
+    #popup.active{
+        display: block;
+    }
+    #popup{
+        display: none;
+        background-color: white;
+        width: 65vw;
+        height: 50vh;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%);
+        padding:15%;
+        padding-top: 5%;
+        transition: 0.5s;
+        z-index :10;
+    }
+    #popup>h3{
+        padding: 0%;
+    }
+    .add{
+        display:block;
+        margin: 2%;
+        border: none;
+        background-color: red;
+        color: white;
+    }
+    .edit{
+        margin-top: 4%;
+    }
+    .close{
+        display:block;
+        border: none;
+        margin-top:40% ;
+        margin-left: 89%;
+        background-color: red;
+        color: white;
+    }
+    .plus{
+        position: absolute;
+        bottom: 6%;
+        left: 34%;
+        color: white;
+    }
+    .trash{
+        position: absolute;
+        left: 85%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    ::placeholder{
+        color: rgb(31, 24, 24);
+    }
+    #newTask{
+        margin-bottom: 2%;
+        /* width: 84vw; */
+    }
+    
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/enonchehtml/fontAwesome/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="task.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" to-do  rounded">
+       <div class="top"> 
+           <h3>TODAY</h3>  <i class=" today fas fa-briefcase fa-2x"></i> 
+       <small class="text-grey"> 18 july 2022</small>
+       </div>
+       <div class="search-box">
+           <input class="search rounded-pill text-center"    onkeypress="searchButton()"id="serach_input" type="text" placeholder="search"> <i class="search-icon fas fa-search" id="search_icon" ></i> 
+       </div>
+       <div class="flex-container">
+           <div class="flex-item rounded-pill" onclick="allPart()"> All</div>
+           <div class="completed_section flex-item rounded-pill" id="completed_section" onclick="completedPart()"> Completed </div>
+           <div class="flex-item rounded-pill" id="unfinish" onclick="uncompletedPart()"> Uncompleted</div>
+       </div>
+       <div id="taskContainer">
+         <!-- <div class="activity rounded"> <i class="  fas fa-plus"></i> Morning workout <i class=" trash  fas fa-trash"></i></div>
+         <div class="activity rounded"> <i class="  fas fa-plus"></i>  Meeting at 10 <i class=" trash fas fa-trash"></i> </div>
+         <div class="activity rounded"> <i class="  fas fa-plus"></i> Launch at 3 <i class=" trash fas fa-trash"></i> </div> -->
+       </div>
+       <div id="edit-popup">
+        <h3> EDIT </h3>
+            <input type="text" class="edit" id="edit_task">
+            <button onclick="edit()"id="task_edit" class="edit"> EDIT</button>
+
+            <button class="add activeOne" onclick="popupToggle_two()"> CLOSE </button>
+       </div>
+ 
+       <button class=" add-item  text-center text-white" id="add_item" onclick="popupToggle();">
+           Add item 
+       </button> 
+       <div id="popup" >
+            <h3>ADD TASK</h3>
+            <HR></HR>
+            <input type="text" placeholder="new task" id="newTask" > <br>
+            <button class="add" id="add" > ADD </button>
+            
+            <button class="close" 
+            onclick="popupToggle()">close</button>
+       </div>
+         
+       <i class=" plus fas fa-plus fa-2x"></i>
+    </div>
+    <script src="task.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>
