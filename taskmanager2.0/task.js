@@ -11,6 +11,7 @@ test.addEventListener('click', add_task );
 // const complete_arr = []
 const completePart = []
 const search_items =[]
+let edit_input = document.getElementById("edit_task")
 let new_input = ""
 
 
@@ -117,12 +118,13 @@ function popupToggle() {
 function popupToggle_two(i) {
     const popupTwo = document.getElementById('edit-popup')
     popupTwo.classList.toggle('activeOne');
-    let edit_input = document.getElementById("edit_task")
     edit_input.value = task_arr[i].title
      new_input = edit_input.value
     console.log(edit_input.value)
 }
-function edit(){
+function edit(i){
+    console.log("hurray")
+    task_arr[i].title = edit_input.value
     
 }
 
