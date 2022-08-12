@@ -13,6 +13,7 @@ const completePart = []
 const search_items =[]
 let edit_input = document.getElementById("edit_task")
 let new_input = ""
+var currently_editing = 0;
 
 
 
@@ -119,12 +120,14 @@ function popupToggle_two(i) {
     const popupTwo = document.getElementById('edit-popup')
     popupTwo.classList.toggle('activeOne');
     edit_input.value = task_arr[i].title
-     new_input = edit_input.value
+    currently_editing = i 
     console.log(edit_input.value)
 }
-function edit(i){
+function edit(){
     console.log("hurray")
-    task_arr[i].title = edit_input.value
+    task_arr[currently_editing].title = edit_input.value;
+    console.log(edit_input.value)
+    update_dom()
     
 }
 
